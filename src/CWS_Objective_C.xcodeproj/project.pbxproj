@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3090EF9196DDDBC00CEFBF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3090EF8196DDDBC00CEFBF8 /* Foundation.framework */; };
+		B3090EFB196DDDBC00CEFBF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3090EFA196DDDBC00CEFBF8 /* CoreGraphics.framework */; };
+		B3090EFD196DDDBC00CEFBF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3090EFC196DDDBC00CEFBF8 /* UIKit.framework */; };
+		B3090F03196DDDBC00CEFBF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3090F01196DDDBC00CEFBF8 /* InfoPlist.strings */; };
+		B3090F0B196DDDBC00CEFBF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3090F0A196DDDBC00CEFBF8 /* Images.xcassets */; };
+		B3090F12196DDDBC00CEFBF8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3090F11196DDDBC00CEFBF8 /* XCTest.framework */; };
+		B3090F13196DDDBC00CEFBF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3090EF8196DDDBC00CEFBF8 /* Foundation.framework */; };
+		B3090F14196DDDBC00CEFBF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3090EFC196DDDBC00CEFBF8 /* UIKit.framework */; };
+		B3090F1C196DDDBC00CEFBF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3090F1A196DDDBC00CEFBF8 /* InfoPlist.strings */; };
+		B3090F1E196DDDBC00CEFBF8 /* CWS_Objective_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3090F1D196DDDBC00CEFBF8 /* CWS_Objective_CTests.m */; };
+		B309100B196DE22600CEFBF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3091000196DE22600CEFBF8 /* AppDelegate.m */; };
+		B309100C196DE22600CEFBF8 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B3091001196DE22600CEFBF8 /* first.png */; };
+		B309100D196DE22600CEFBF8 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3091002196DE22600CEFBF8 /* first@2x.png */; };
+		B309100E196DE22600CEFBF8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3091004196DE22600CEFBF8 /* FirstViewController.m */; };
+		B309100F196DE22600CEFBF8 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3091005196DE22600CEFBF8 /* FirstViewController.xib */; };
+		B3091010196DE22600CEFBF8 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B3091006196DE22600CEFBF8 /* second.png */; };
+		B3091011196DE22600CEFBF8 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3091007196DE22600CEFBF8 /* second@2x.png */; };
+		B3091012196DE22600CEFBF8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3091009196DE22600CEFBF8 /* SecondViewController.m */; };
+		B3091013196DE22600CEFBF8 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B309100A196DE22600CEFBF8 /* SecondViewController.xib */; };
+		B3091016196DE5BE00CEFBF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3091015196DE5BE00CEFBF8 /* main.m */; };
+		B3091018196DF32400CEFBF8 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3091017196DF32400CEFBF8 /* config.plist */; };
+		B3B72518196F128F009AD4DB /* CWSAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72517196F128F009AD4DB /* CWSAPI.m */; };
+		B3B72532196F12B7009AD4DB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7251A196F12B7009AD4DB /* NSObject+SBJson.m */; };
+		B3B72533196F12B7009AD4DB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7251D196F12B7009AD4DB /* SBJsonParser.m */; };
+		B3B72534196F12B7009AD4DB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7251F196F12B7009AD4DB /* SBJsonStreamParser.m */; };
+		B3B72535196F12B7009AD4DB /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72521196F12B7009AD4DB /* SBJsonStreamParserAccumulator.m */; };
+		B3B72536196F12B7009AD4DB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72523196F12B7009AD4DB /* SBJsonStreamParserAdapter.m */; };
+		B3B72537196F12B7009AD4DB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72525196F12B7009AD4DB /* SBJsonStreamParserState.m */; };
+		B3B72538196F12B7009AD4DB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72527196F12B7009AD4DB /* SBJsonStreamWriter.m */; };
+		B3B72539196F12B7009AD4DB /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72529196F12B7009AD4DB /* SBJsonStreamWriterAccumulator.m */; };
+		B3B7253A196F12B7009AD4DB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7252B196F12B7009AD4DB /* SBJsonStreamWriterState.m */; };
+		B3B7253B196F12B7009AD4DB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7252D196F12B7009AD4DB /* SBJsonTokeniser.m */; };
+		B3B7253C196F12B7009AD4DB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7252F196F12B7009AD4DB /* SBJsonUTF8Stream.m */; };
+		B3B7253D196F12B7009AD4DB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72531196F12B7009AD4DB /* SBJsonWriter.m */; };
+		B3B72542196F12D6009AD4DB /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7253F196F12D6009AD4DB /* NSDate+InternetDateTime.m */; };
+		B3B72543196F12D6009AD4DB /* NSString+Base64Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72541196F12D6009AD4DB /* NSString+Base64Encode.m */; };
+		B3B72554196F12FE009AD4DB /* CWSAddressInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72545196F12FE009AD4DB /* CWSAddressInfo.m */; };
+		B3B72555196F12FE009AD4DB /* CWSAlternativeMerchantData.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72547196F12FE009AD4DB /* CWSAlternativeMerchantData.m */; };
+		B3B72556196F12FE009AD4DB /* CWSCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72549196F12FE009AD4DB /* CWSCreditCard.m */; };
+		B3B72557196F12FE009AD4DB /* CWSDifferenceData.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7254B196F12FE009AD4DB /* CWSDifferenceData.m */; };
+		B3B72558196F12FE009AD4DB /* CWSInterchangeData.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7254D196F12FE009AD4DB /* CWSInterchangeData.m */; };
+		B3B72559196F12FE009AD4DB /* CWSTransactionData.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B7254F196F12FE009AD4DB /* CWSTransactionData.m */; };
+		B3B7255A196F12FE009AD4DB /* CWSTransactionDataPro.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72551196F12FE009AD4DB /* CWSTransactionDataPro.m */; };
+		B3B7255B196F12FE009AD4DB /* CWSTransactionReportingData.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B72553196F12FE009AD4DB /* CWSTransactionReportingData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3090F15196DDDBC00CEFBF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3090EED196DDDBC00CEFBF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3090EF4196DDDBC00CEFBF8;
+			remoteInfo = CWS_Objective_C;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3090EF5196DDDBC00CEFBF8 /* CWS_Objective_C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWS_Objective_C.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3090EF8196DDDBC00CEFBF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3090EFA196DDDBC00CEFBF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B3090EFC196DDDBC00CEFBF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3090F00196DDDBC00CEFBF8 /* CWS_Objective_C-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CWS_Objective_C-Info.plist"; sourceTree = "<group>"; };
+		B3090F02196DDDBC00CEFBF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3090F06196DDDBC00CEFBF8 /* CWS_Objective_C-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CWS_Objective_C-Prefix.pch"; sourceTree = "<group>"; };
+		B3090F0A196DDDBC00CEFBF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B3090F10196DDDBC00CEFBF8 /* CWS_Objective_CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CWS_Objective_CTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3090F11196DDDBC00CEFBF8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B3090F19196DDDBC00CEFBF8 /* CWS_Objective_CTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CWS_Objective_CTests-Info.plist"; sourceTree = "<group>"; };
+		B3090F1B196DDDBC00CEFBF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3090F1D196DDDBC00CEFBF8 /* CWS_Objective_CTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWS_Objective_CTests.m; sourceTree = "<group>"; };
+		B3090FFF196DE22600CEFBF8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3091000196DE22600CEFBF8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3091001196DE22600CEFBF8 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		B3091002196DE22600CEFBF8 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		B3091003196DE22600CEFBF8 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B3091004196DE22600CEFBF8 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B3091005196DE22600CEFBF8 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		B3091006196DE22600CEFBF8 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		B3091007196DE22600CEFBF8 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		B3091008196DE22600CEFBF8 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B3091009196DE22600CEFBF8 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B309100A196DE22600CEFBF8 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		B3091015196DE5BE00CEFBF8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3091017196DF32400CEFBF8 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		B3B72516196F128F009AD4DB /* CWSAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSAPI.h; path = CWS_SDK/CWSAPI.h; sourceTree = "<group>"; };
+		B3B72517196F128F009AD4DB /* CWSAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSAPI.m; path = CWS_SDK/CWSAPI.m; sourceTree = "<group>"; };
+		B3B72519196F12B7009AD4DB /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "CWS_SDK/NSObject+SBJson.h"; sourceTree = "<group>"; };
+		B3B7251A196F12B7009AD4DB /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "CWS_SDK/NSObject+SBJson.m"; sourceTree = "<group>"; };
+		B3B7251B196F12B7009AD4DB /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = CWS_SDK/SBJson.h; sourceTree = "<group>"; };
+		B3B7251C196F12B7009AD4DB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = CWS_SDK/SBJsonParser.h; sourceTree = "<group>"; };
+		B3B7251D196F12B7009AD4DB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = CWS_SDK/SBJsonParser.m; sourceTree = "<group>"; };
+		B3B7251E196F12B7009AD4DB /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = CWS_SDK/SBJsonStreamParser.h; sourceTree = "<group>"; };
+		B3B7251F196F12B7009AD4DB /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = CWS_SDK/SBJsonStreamParser.m; sourceTree = "<group>"; };
+		B3B72520196F12B7009AD4DB /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = CWS_SDK/SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		B3B72521196F12B7009AD4DB /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = CWS_SDK/SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		B3B72522196F12B7009AD4DB /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = CWS_SDK/SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		B3B72523196F12B7009AD4DB /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = CWS_SDK/SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		B3B72524196F12B7009AD4DB /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = CWS_SDK/SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		B3B72525196F12B7009AD4DB /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = CWS_SDK/SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		B3B72526196F12B7009AD4DB /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = CWS_SDK/SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		B3B72527196F12B7009AD4DB /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = CWS_SDK/SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		B3B72528196F12B7009AD4DB /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = CWS_SDK/SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		B3B72529196F12B7009AD4DB /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = CWS_SDK/SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		B3B7252A196F12B7009AD4DB /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = CWS_SDK/SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		B3B7252B196F12B7009AD4DB /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = CWS_SDK/SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		B3B7252C196F12B7009AD4DB /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = CWS_SDK/SBJsonTokeniser.h; sourceTree = "<group>"; };
+		B3B7252D196F12B7009AD4DB /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = CWS_SDK/SBJsonTokeniser.m; sourceTree = "<group>"; };
+		B3B7252E196F12B7009AD4DB /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonUTF8Stream.h; path = CWS_SDK/SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		B3B7252F196F12B7009AD4DB /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = CWS_SDK/SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		B3B72530196F12B7009AD4DB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = CWS_SDK/SBJsonWriter.h; sourceTree = "<group>"; };
+		B3B72531196F12B7009AD4DB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = CWS_SDK/SBJsonWriter.m; sourceTree = "<group>"; };
+		B3B7253E196F12D6009AD4DB /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+InternetDateTime.h"; path = "CWS_SDK/NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		B3B7253F196F12D6009AD4DB /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+InternetDateTime.m"; path = "CWS_SDK/NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		B3B72540196F12D6009AD4DB /* NSString+Base64Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Base64Encode.h"; path = "CWS_SDK/NSString+Base64Encode.h"; sourceTree = "<group>"; };
+		B3B72541196F12D6009AD4DB /* NSString+Base64Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Base64Encode.m"; path = "CWS_SDK/NSString+Base64Encode.m"; sourceTree = "<group>"; };
+		B3B72544196F12FE009AD4DB /* CWSAddressInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSAddressInfo.h; path = CWS_SDK/CWSAddressInfo.h; sourceTree = "<group>"; };
+		B3B72545196F12FE009AD4DB /* CWSAddressInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSAddressInfo.m; path = CWS_SDK/CWSAddressInfo.m; sourceTree = "<group>"; };
+		B3B72546196F12FE009AD4DB /* CWSAlternativeMerchantData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSAlternativeMerchantData.h; path = CWS_SDK/CWSAlternativeMerchantData.h; sourceTree = "<group>"; };
+		B3B72547196F12FE009AD4DB /* CWSAlternativeMerchantData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSAlternativeMerchantData.m; path = CWS_SDK/CWSAlternativeMerchantData.m; sourceTree = "<group>"; };
+		B3B72548196F12FE009AD4DB /* CWSCreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSCreditCard.h; path = CWS_SDK/CWSCreditCard.h; sourceTree = "<group>"; };
+		B3B72549196F12FE009AD4DB /* CWSCreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSCreditCard.m; path = CWS_SDK/CWSCreditCard.m; sourceTree = "<group>"; };
+		B3B7254A196F12FE009AD4DB /* CWSDifferenceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSDifferenceData.h; path = CWS_SDK/CWSDifferenceData.h; sourceTree = "<group>"; };
+		B3B7254B196F12FE009AD4DB /* CWSDifferenceData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSDifferenceData.m; path = CWS_SDK/CWSDifferenceData.m; sourceTree = "<group>"; };
+		B3B7254C196F12FE009AD4DB /* CWSInterchangeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSInterchangeData.h; path = CWS_SDK/CWSInterchangeData.h; sourceTree = "<group>"; };
+		B3B7254D196F12FE009AD4DB /* CWSInterchangeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSInterchangeData.m; path = CWS_SDK/CWSInterchangeData.m; sourceTree = "<group>"; };
+		B3B7254E196F12FE009AD4DB /* CWSTransactionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSTransactionData.h; path = CWS_SDK/CWSTransactionData.h; sourceTree = "<group>"; };
+		B3B7254F196F12FE009AD4DB /* CWSTransactionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSTransactionData.m; path = CWS_SDK/CWSTransactionData.m; sourceTree = "<group>"; };
+		B3B72550196F12FE009AD4DB /* CWSTransactionDataPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSTransactionDataPro.h; path = CWS_SDK/CWSTransactionDataPro.h; sourceTree = "<group>"; };
+		B3B72551196F12FE009AD4DB /* CWSTransactionDataPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSTransactionDataPro.m; path = CWS_SDK/CWSTransactionDataPro.m; sourceTree = "<group>"; };
+		B3B72552196F12FE009AD4DB /* CWSTransactionReportingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWSTransactionReportingData.h; path = CWS_SDK/CWSTransactionReportingData.h; sourceTree = "<group>"; };
+		B3B72553196F12FE009AD4DB /* CWSTransactionReportingData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWSTransactionReportingData.m; path = CWS_SDK/CWSTransactionReportingData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3090EF2196DDDBC00CEFBF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3090EFB196DDDBC00CEFBF8 /* CoreGraphics.framework in Frameworks */,
+				B3090EFD196DDDBC00CEFBF8 /* UIKit.framework in Frameworks */,
+				B3090EF9196DDDBC00CEFBF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3090F0D196DDDBC00CEFBF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3090F12196DDDBC00CEFBF8 /* XCTest.framework in Frameworks */,
+				B3090F14196DDDBC00CEFBF8 /* UIKit.framework in Frameworks */,
+				B3090F13196DDDBC00CEFBF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3090EEC196DDDBC00CEFBF8 = {
+			isa = PBXGroup;
+			children = (
+				B3090EFE196DDDBC00CEFBF8 /* CWS_Objective_C */,
+				B3090F17196DDDBC00CEFBF8 /* CWS_Objective_CTests */,
+				B3090EF7196DDDBC00CEFBF8 /* Frameworks */,
+				B3090EF6196DDDBC00CEFBF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3090EF6196DDDBC00CEFBF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3090EF5196DDDBC00CEFBF8 /* CWS_Objective_C.app */,
+				B3090F10196DDDBC00CEFBF8 /* CWS_Objective_CTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3090EF7196DDDBC00CEFBF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3090EF8196DDDBC00CEFBF8 /* Foundation.framework */,
+				B3090EFA196DDDBC00CEFBF8 /* CoreGraphics.framework */,
+				B3090EFC196DDDBC00CEFBF8 /* UIKit.framework */,
+				B3090F11196DDDBC00CEFBF8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3090EFE196DDDBC00CEFBF8 /* CWS_Objective_C */ = {
+			isa = PBXGroup;
+			children = (
+				B3090FFF196DE22600CEFBF8 /* AppDelegate.h */,
+				B3091000196DE22600CEFBF8 /* AppDelegate.m */,
+				B3091001196DE22600CEFBF8 /* first.png */,
+				B3091002196DE22600CEFBF8 /* first@2x.png */,
+				B3091003196DE22600CEFBF8 /* FirstViewController.h */,
+				B3091004196DE22600CEFBF8 /* FirstViewController.m */,
+				B3091005196DE22600CEFBF8 /* FirstViewController.xib */,
+				B3091006196DE22600CEFBF8 /* second.png */,
+				B3091007196DE22600CEFBF8 /* second@2x.png */,
+				B3091008196DE22600CEFBF8 /* SecondViewController.h */,
+				B3091009196DE22600CEFBF8 /* SecondViewController.m */,
+				B309100A196DE22600CEFBF8 /* SecondViewController.xib */,
+				B3090F8F196DDEBD00CEFBF8 /* SDK */,
+				B3090F0A196DDDBC00CEFBF8 /* Images.xcassets */,
+				B3090EFF196DDDBC00CEFBF8 /* Supporting Files */,
+			);
+			path = CWS_Objective_C;
+			sourceTree = "<group>";
+		};
+		B3090EFF196DDDBC00CEFBF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3091017196DF32400CEFBF8 /* config.plist */,
+				B3091015196DE5BE00CEFBF8 /* main.m */,
+				B3090F00196DDDBC00CEFBF8 /* CWS_Objective_C-Info.plist */,
+				B3090F01196DDDBC00CEFBF8 /* InfoPlist.strings */,
+				B3090F06196DDDBC00CEFBF8 /* CWS_Objective_C-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3090F17196DDDBC00CEFBF8 /* CWS_Objective_CTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3090F1D196DDDBC00CEFBF8 /* CWS_Objective_CTests.m */,
+				B3090F18196DDDBC00CEFBF8 /* Supporting Files */,
+			);
+			path = CWS_Objective_CTests;
+			sourceTree = "<group>";
+		};
+		B3090F18196DDDBC00CEFBF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3090F19196DDDBC00CEFBF8 /* CWS_Objective_CTests-Info.plist */,
+				B3090F1A196DDDBC00CEFBF8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3090F8F196DDEBD00CEFBF8 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				B3B72516196F128F009AD4DB /* CWSAPI.h */,
+				B3B72517196F128F009AD4DB /* CWSAPI.m */,
+				B3090FA9196DDF8E00CEFBF8 /* Helpers */,
+				B3090F90196DDF2A00CEFBF8 /* Classes */,
+			);
+			name = SDK;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B3090F90196DDF2A00CEFBF8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3B72544196F12FE009AD4DB /* CWSAddressInfo.h */,
+				B3B72545196F12FE009AD4DB /* CWSAddressInfo.m */,
+				B3B72546196F12FE009AD4DB /* CWSAlternativeMerchantData.h */,
+				B3B72547196F12FE009AD4DB /* CWSAlternativeMerchantData.m */,
+				B3B72548196F12FE009AD4DB /* CWSCreditCard.h */,
+				B3B72549196F12FE009AD4DB /* CWSCreditCard.m */,
+				B3B7254A196F12FE009AD4DB /* CWSDifferenceData.h */,
+				B3B7254B196F12FE009AD4DB /* CWSDifferenceData.m */,
+				B3B7254C196F12FE009AD4DB /* CWSInterchangeData.h */,
+				B3B7254D196F12FE009AD4DB /* CWSInterchangeData.m */,
+				B3B7254E196F12FE009AD4DB /* CWSTransactionData.h */,
+				B3B7254F196F12FE009AD4DB /* CWSTransactionData.m */,
+				B3B72550196F12FE009AD4DB /* CWSTransactionDataPro.h */,
+				B3B72551196F12FE009AD4DB /* CWSTransactionDataPro.m */,
+				B3B72552196F12FE009AD4DB /* CWSTransactionReportingData.h */,
+				B3B72553196F12FE009AD4DB /* CWSTransactionReportingData.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B3090FA9196DDF8E00CEFBF8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B3B7253E196F12D6009AD4DB /* NSDate+InternetDateTime.h */,
+				B3B7253F196F12D6009AD4DB /* NSDate+InternetDateTime.m */,
+				B3B72540196F12D6009AD4DB /* NSString+Base64Encode.h */,
+				B3B72541196F12D6009AD4DB /* NSString+Base64Encode.m */,
+				B3090FD6196DE07E00CEFBF8 /* SBJSON */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B3090FD6196DE07E00CEFBF8 /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				B3B72519196F12B7009AD4DB /* NSObject+SBJson.h */,
+				B3B7251A196F12B7009AD4DB /* NSObject+SBJson.m */,
+				B3B7251B196F12B7009AD4DB /* SBJson.h */,
+				B3B7251C196F12B7009AD4DB /* SBJsonParser.h */,
+				B3B7251D196F12B7009AD4DB /* SBJsonParser.m */,
+				B3B7251E196F12B7009AD4DB /* SBJsonStreamParser.h */,
+				B3B7251F196F12B7009AD4DB /* SBJsonStreamParser.m */,
+				B3B72520196F12B7009AD4DB /* SBJsonStreamParserAccumulator.h */,
+				B3B72521196F12B7009AD4DB /* SBJsonStreamParserAccumulator.m */,
+				B3B72522196F12B7009AD4DB /* SBJsonStreamParserAdapter.h */,
+				B3B72523196F12B7009AD4DB /* SBJsonStreamParserAdapter.m */,
+				B3B72524196F12B7009AD4DB /* SBJsonStreamParserState.h */,
+				B3B72525196F12B7009AD4DB /* SBJsonStreamParserState.m */,
+				B3B72526196F12B7009AD4DB /* SBJsonStreamWriter.h */,
+				B3B72527196F12B7009AD4DB /* SBJsonStreamWriter.m */,
+				B3B72528196F12B7009AD4DB /* SBJsonStreamWriterAccumulator.h */,
+				B3B72529196F12B7009AD4DB /* SBJsonStreamWriterAccumulator.m */,
+				B3B7252A196F12B7009AD4DB /* SBJsonStreamWriterState.h */,
+				B3B7252B196F12B7009AD4DB /* SBJsonStreamWriterState.m */,
+				B3B7252C196F12B7009AD4DB /* SBJsonTokeniser.h */,
+				B3B7252D196F12B7009AD4DB /* SBJsonTokeniser.m */,
+				B3B7252E196F12B7009AD4DB /* SBJsonUTF8Stream.h */,
+				B3B7252F196F12B7009AD4DB /* SBJsonUTF8Stream.m */,
+				B3B72530196F12B7009AD4DB /* SBJsonWriter.h */,
+				B3B72531196F12B7009AD4DB /* SBJsonWriter.m */,
+			);
+			name = SBJSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3090EF4196DDDBC00CEFBF8 /* CWS_Objective_C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3090F21196DDDBC00CEFBF8 /* Build configuration list for PBXNativeTarget "CWS_Objective_C" */;
+			buildPhases = (
+				B3090EF1196DDDBC00CEFBF8 /* Sources */,
+				B3090EF2196DDDBC00CEFBF8 /* Frameworks */,
+				B3090EF3196DDDBC00CEFBF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CWS_Objective_C;
+			productName = CWS_Objective_C;
+			productReference = B3090EF5196DDDBC00CEFBF8 /* CWS_Objective_C.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3090F0F196DDDBC00CEFBF8 /* CWS_Objective_CTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3090F24196DDDBC00CEFBF8 /* Build configuration list for PBXNativeTarget "CWS_Objective_CTests" */;
+			buildPhases = (
+				B3090F0C196DDDBC00CEFBF8 /* Sources */,
+				B3090F0D196DDDBC00CEFBF8 /* Frameworks */,
+				B3090F0E196DDDBC00CEFBF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3090F16196DDDBC00CEFBF8 /* PBXTargetDependency */,
+			);
+			name = CWS_Objective_CTests;
+			productName = CWS_Objective_CTests;
+			productReference = B3090F10196DDDBC00CEFBF8 /* CWS_Objective_CTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3090EED196DDDBC00CEFBF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Window;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Zebulon Bowles";
+				TargetAttributes = {
+					B3090F0F196DDDBC00CEFBF8 = {
+						TestTargetID = B3090EF4196DDDBC00CEFBF8;
+					};
+				};
+			};
+			buildConfigurationList = B3090EF0196DDDBC00CEFBF8 /* Build configuration list for PBXProject "CWS_Objective_C" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B3090EEC196DDDBC00CEFBF8;
+			productRefGroup = B3090EF6196DDDBC00CEFBF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3090EF4196DDDBC00CEFBF8 /* CWS_Objective_C */,
+				B3090F0F196DDDBC00CEFBF8 /* CWS_Objective_CTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3090EF3196DDDBC00CEFBF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3091011196DE22600CEFBF8 /* second@2x.png in Resources */,
+				B309100F196DE22600CEFBF8 /* FirstViewController.xib in Resources */,
+				B3090F03196DDDBC00CEFBF8 /* InfoPlist.strings in Resources */,
+				B3090F0B196DDDBC00CEFBF8 /* Images.xcassets in Resources */,
+				B3091010196DE22600CEFBF8 /* second.png in Resources */,
+				B3091018196DF32400CEFBF8 /* config.plist in Resources */,
+				B309100C196DE22600CEFBF8 /* first.png in Resources */,
+				B3091013196DE22600CEFBF8 /* SecondViewController.xib in Resources */,
+				B309100D196DE22600CEFBF8 /* first@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3090F0E196DDDBC00CEFBF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3090F1C196DDDBC00CEFBF8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3090EF1196DDDBC00CEFBF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B72537196F12B7009AD4DB /* SBJsonStreamParserState.m in Sources */,
+				B3B7253D196F12B7009AD4DB /* SBJsonWriter.m in Sources */,
+				B3B7255A196F12FE009AD4DB /* CWSTransactionDataPro.m in Sources */,
+				B3B7255B196F12FE009AD4DB /* CWSTransactionReportingData.m in Sources */,
+				B3B72532196F12B7009AD4DB /* NSObject+SBJson.m in Sources */,
+				B3B7253A196F12B7009AD4DB /* SBJsonStreamWriterState.m in Sources */,
+				B3B7253C196F12B7009AD4DB /* SBJsonUTF8Stream.m in Sources */,
+				B3B72534196F12B7009AD4DB /* SBJsonStreamParser.m in Sources */,
+				B3B7253B196F12B7009AD4DB /* SBJsonTokeniser.m in Sources */,
+				B3B72518196F128F009AD4DB /* CWSAPI.m in Sources */,
+				B3091012196DE22600CEFBF8 /* SecondViewController.m in Sources */,
+				B3B72543196F12D6009AD4DB /* NSString+Base64Encode.m in Sources */,
+				B3091016196DE5BE00CEFBF8 /* main.m in Sources */,
+				B309100E196DE22600CEFBF8 /* FirstViewController.m in Sources */,
+				B3B72557196F12FE009AD4DB /* CWSDifferenceData.m in Sources */,
+				B3B72556196F12FE009AD4DB /* CWSCreditCard.m in Sources */,
+				B3B72538196F12B7009AD4DB /* SBJsonStreamWriter.m in Sources */,
+				B3B72533196F12B7009AD4DB /* SBJsonParser.m in Sources */,
+				B3B72555196F12FE009AD4DB /* CWSAlternativeMerchantData.m in Sources */,
+				B309100B196DE22600CEFBF8 /* AppDelegate.m in Sources */,
+				B3B72542196F12D6009AD4DB /* NSDate+InternetDateTime.m in Sources */,
+				B3B72539196F12B7009AD4DB /* SBJsonStreamWriterAccumulator.m in Sources */,
+				B3B72535196F12B7009AD4DB /* SBJsonStreamParserAccumulator.m in Sources */,
+				B3B72554196F12FE009AD4DB /* CWSAddressInfo.m in Sources */,
+				B3B72559196F12FE009AD4DB /* CWSTransactionData.m in Sources */,
+				B3B72558196F12FE009AD4DB /* CWSInterchangeData.m in Sources */,
+				B3B72536196F12B7009AD4DB /* SBJsonStreamParserAdapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3090F0C196DDDBC00CEFBF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3090F1E196DDDBC00CEFBF8 /* CWS_Objective_CTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3090F16196DDDBC00CEFBF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3090EF4196DDDBC00CEFBF8 /* CWS_Objective_C */;
+			targetProxy = B3090F15196DDDBC00CEFBF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3090F01196DDDBC00CEFBF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3090F02196DDDBC00CEFBF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B3090F1A196DDDBC00CEFBF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3090F1B196DDDBC00CEFBF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3090F1F196DDDBC00CEFBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3090F20196DDDBC00CEFBF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3090F22196DDDBC00CEFBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CWS_Objective_C/CWS_Objective_C-Prefix.pch";
+				INFOPLIST_FILE = "CWS_Objective_C/CWS_Objective_C-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B3090F23196DDDBC00CEFBF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CWS_Objective_C/CWS_Objective_C-Prefix.pch";
+				INFOPLIST_FILE = "CWS_Objective_C/CWS_Objective_C-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B3090F25196DDDBC00CEFBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CWS_Objective_C.app/CWS_Objective_C";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CWS_Objective_C/CWS_Objective_C-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CWS_Objective_CTests/CWS_Objective_CTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B3090F26196DDDBC00CEFBF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CWS_Objective_C.app/CWS_Objective_C";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CWS_Objective_C/CWS_Objective_C-Prefix.pch";
+				INFOPLIST_FILE = "CWS_Objective_CTests/CWS_Objective_CTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3090EF0196DDDBC00CEFBF8 /* Build configuration list for PBXProject "CWS_Objective_C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3090F1F196DDDBC00CEFBF8 /* Debug */,
+				B3090F20196DDDBC00CEFBF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3090F21196DDDBC00CEFBF8 /* Build configuration list for PBXNativeTarget "CWS_Objective_C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3090F22196DDDBC00CEFBF8 /* Debug */,
+				B3090F23196DDDBC00CEFBF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3090F24196DDDBC00CEFBF8 /* Build configuration list for PBXNativeTarget "CWS_Objective_CTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3090F25196DDDBC00CEFBF8 /* Debug */,
+				B3090F26196DDDBC00CEFBF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3090EED196DDDBC00CEFBF8 /* Project object */;
+}
